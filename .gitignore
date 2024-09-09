@@ -1,1 +1,60 @@
-node_modules
+# Node.js / npm
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build directories (Webpack, Next.js, etc.)
+dist/
+build/
+.out/
+.next/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS Generated files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor Directories/Settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Dependency directories
+/node_modules
+
+# Cache directories
+.cache/
+tmp/
+.temp/
+
+# Environment Variables and Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Git Ignore lockfiles
+package-lock.json
+yarn.lock
+
+# Coverage directory used by testing tools
+coverage/
+
+# Typescript Generated Files
+*.tsbuildinfo
+*.d.ts
+*.d.ts.map
+
+# Specific for React
+*.env.production
+*.env.development
+
+# Optional: if using Docker
+Dockerfile
+docker-compose.yml
