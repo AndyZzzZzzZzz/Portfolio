@@ -2,10 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom animated text style */
 .animated-text {
   font-size: 2rem;
   font-weight: bold;
-  color: #1e3a8a; /* Tailwind CSS color for blue-800 */
+  color: #1e3a8a; /* Tailwind blue-800 */
   border-right: 2px solid #1e3a8a; /* Cursor effect */
   animation: blink-caret 0.75s step-end infinite;
 }
@@ -16,41 +17,58 @@
   50% { border-color: #1e3a8a; }
 }
 
+/* Navbar background with blur effect */
 nav {
-    backdrop-filter: blur(10px); /* Add a slight blur to the navbar for better blending */
-  }
-  
-  a {
-    color: #1f2937; /* Default text color (gray-900) */
-  }
-  
-  a:hover {
-    color: #3b82f6; /* Hover text color (blue-500) */
-  }
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Helvetica', 'Arial', sans-serif;
-  }
+  backdrop-filter: blur(10px); /* Smooth blur for navbar */
+}
 
-  html {
-    scroll-behavior: smooth;
-  }
+/* Anchor tag styles */
+a {
+  color: #1f2937; /* Tailwind gray-900 */
+}
 
-  body.dark {
-    background-color: #1a202c; /* Tailwind's gray-900 */
-    color: #edf2f7; /* Tailwind's gray-100 */
-  }
-  
-  /* Ensure components and text colors switch appropriately */
-  .dark .bg-white {
-    background-color: #1a202c; /* Switch white backgrounds to dark */
-  }
-  .dark .text-gray-900 {
-    color: #edf2f7; /* Switch text to light color */
-  }
-  
+a:hover {
+  color: #3b82f6; /* Tailwind blue-500 */
+}
+
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global font family */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dark mode body background and text color */
+body.dark {
+  background-color: #1a202c; /* Tailwind gray-900 */
+  color: #edf2f7; /* Tailwind gray-100 */
+}
+
+/* Dark mode adjustments for components */
+.dark .bg-white {
+  background-color: #1a202c; /* Adjust white backgrounds */
+}
+
+.dark .text-gray-900 {
+  color: #edf2f7; /* Adjust gray-900 text to light color */
+}
+
+/* Optional custom scrollbar styles for better UX */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  border-radius: 4px;
+}
