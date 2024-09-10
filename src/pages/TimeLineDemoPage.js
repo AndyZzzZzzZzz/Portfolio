@@ -36,7 +36,7 @@ export function TimelineDemoPage() {
                   D-Wave Systems
                 </h3>
                 <div className="text-base font-normal dark:text-slate-400 text-gray-600">
-                  Optimization Algorithms Team
+                  Software, Algorithms, and Cloud Services
                 </div>
                 <img src="/dwave1.png" alt="Dwave" className="flex flex-1 w-full rounded-lg mt-4 object-cover" />
               </div>
