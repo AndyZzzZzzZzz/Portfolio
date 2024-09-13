@@ -28,8 +28,8 @@ export default function Projects() {
           {/* Project 1: Expert.io */}
           <div className="flex flex-col lg:flex-row items-start">
             <CardDemo
-              title="Expert.io"
-              description="Server-side database website using Ruby on Rails, connecting consumers with experts through secure authentication, real-time availability, and advanced search filters."
+              title="SquadMatch"
+              description="Server-side database website using Ruby on Rails, connecting university students with peers to play sports through secure authentication, real-time availability, and advanced search filters."
               githubLink="https://github.com/AndyZzzZzzZzz"
               imageUrl="/black.png"
             />
@@ -37,7 +37,7 @@ export default function Projects() {
             <div className="hidden lg:flex flex-col justify-start mt-4 lg:mt-0 lg:ml-6">
               <p className="text-lg font-semibold text-gray-900 dark:text-white">Tech Stack:</p>
               <div className="flex flex-col gap-3 mt-2">
-                {["Ruby on Rails", "PostgreSQL", "Devise", "Heroku"].map((tech, index) => (
+                {["Ruby on Rails", "PostgreSQL", "React.js", "JavaScript", "CSS", "HTML5", "AWS"].map((tech, index) => (
                   <span 
                     key={index} 
                     className="text-md font-medium text-gray-900 dark:text-gray-100 transform transition duration-300 hover:-translate-y-1 hover:text-indigo-500 dark:hover:text-indigo-400"
