@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React App</title>
-    <!-- Link to Tailwind CSS -->
-    <link href="/path/to/your/tailwind.css" rel="stylesheet"> <!-- Adjust the path -->
+    <link href="/path/to/your/tailwind.css" rel="stylesheet"> 
   </head>
   <body class="bg-white dark:bg-gray-900 dark:text-gray-100 transition duration-300 ease-in-out">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     
-    <!-- React root div -->
     <div id="root"></div>
     
-    <!-- Optional script to toggle dark mode -->
     <script>
-      // Example function to toggle dark mode
       const toggleDarkMode = () => {
         document.body.classList.toggle('dark');
       };
     </script>
 
-    <!-- Load your React app (typically through a bundled JS file) -->
-    <script src="/path/to/your/bundled/react-app.js"></script> <!-- Adjust the path -->
+    <script src="/path/to/your/bundled/react-app.js"></script> 
   </body>
+
+  // Hidden static form for Netlify to parse during the build process
+  <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <textarea name="message"></textarea>
+  </form>
+
 </html>
