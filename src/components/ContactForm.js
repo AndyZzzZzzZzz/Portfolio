@@ -2,6 +2,10 @@ import React from 'react';
 
 // Define and export the Contact functional component
 export default function Contact() {
+     // State hooks to manage the input fields for name, email, and message
+    const [name, setName] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [message, setMessage] = React.useState('');
 
     // JSX structure to render the contact form and embedded map
     return (
@@ -73,6 +77,7 @@ export default function Contact() {
                             id="name"
                             name="name"
                             className="w-full bg-gray-100 dark:bg-slate-700 rounded border border-gray-300 dark:border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-900 dark:text-gray-200 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                            value={name}
                             onChange={(e) => setName(e.target.value)} // Update state on input change
                         />
                     </div>
@@ -85,6 +90,7 @@ export default function Contact() {
                             id="email"
                             name="email"
                             className="w-full bg-gray-100 dark:bg-slate-700 rounded border border-gray-300 dark:border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-900 dark:text-gray-200 py-2 px-4 leading-8 transition-colors duration-200 ease-in-out"
+                            value={email}
                             onChange={(e) => setEmail(e.target.value)} // Update state on input change
                         />
                     </div>
@@ -96,6 +102,7 @@ export default function Contact() {
                             id="message"
                             name="message"
                             className="w-full bg-gray-100 dark:bg-slate-700 rounded border border-gray-300 dark:border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-40 text-base outline-none text-gray-900 dark:text-gray-200 py-2 px-4 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                            value={message}
                             onChange={(e) => setMessage(e.target.value)} // Update state on input change
                         />
                     </div>
