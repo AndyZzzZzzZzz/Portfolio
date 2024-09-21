@@ -17,15 +17,7 @@ export default function Contact() {
     // Function to handle form submission, prevent page refresh, and send form data
     function handleSubmit(e) {
         e.preventDefault(); // Prevent form from refreshing the page
-
-        // Send a POST request with form data encoded
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", name, email, message }), // Encode form data
-        })
-            .then(() => alert("Message sent!")) // Show success alert
-            .catch((error) => alert(error)); // Handle error
+        e.target.submit();
     }
 
     // JSX structure to render the contact form and embedded map
