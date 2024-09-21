@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- head content -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>React App</title>
-    <link href="../src/index.css" rel="stylesheet">
+
+    <!-- CSS will be handled by Webpack and injected automatically -->
   </head>
   <body class="bg-white dark:bg-gray-900 dark:text-gray-100 transition duration-300 ease-in-out">
     <noscript>You need to enable JavaScript to run this app.</noscript>
 
+    <!-- React Root -->
     <div id="root"></div>
 
+    <!-- Dark Mode Toggle Script -->
     <script>
       const toggleDarkMode = () => {
         document.body.classList.toggle('dark');
       };
     </script>
-
-    <script src="../src/App.js"></script>
 
     <!-- Hidden static form for Netlify to parse during the build process -->
     <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
@@ -27,5 +28,7 @@
       <input type="email" name="email" />
       <textarea name="message"></textarea>
     </form>
+
+    <!-- The JavaScript bundle will be injected automatically by Webpack -->
   </body>
 </html>
