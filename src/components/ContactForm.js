@@ -73,11 +73,15 @@ export default function Contact() {
 
                 {/* Contact form */}
                 <form
-                    netlify // Netlify form handling
                     name="contact" // Form name for Netlify
+                    method="POST"
+                    data-netlify="true" // Enable Netlify form handling
+                    netlify-honeypot="bot-field" // Anti-spam hidden field
                     onSubmit={handleSubmit} // Handle form submission
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
                 >
+                     {/* Hidden input to identify the form */}
+                    <input type="hidden" name="form-name" value="contact" />
                     <h2 className="text-gray-900 dark:text-gray-200 sm:text-4xl text-3xl mb-1 font-medium title-font">
                         Get in Touch
                     </h2>
