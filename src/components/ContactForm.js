@@ -2,10 +2,6 @@ import React from 'react';
 
 // Define and export the Contact functional component
 export default function Contact() {
-     // State hooks to manage the input fields for name, email, and message
-    const [name, setName] = React.useState('');
-    const [email, setEmail] = React.useState('');
-    const [message, setMessage] = React.useState('');
 
     // JSX structure to render the contact form and embedded map
     return (
