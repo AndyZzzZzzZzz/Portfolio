@@ -2,10 +2,10 @@ import React from 'react';
 
 // Define and export the Contact functional component
 export default function Contact() {
-    // State hooks to manage the input fields for name, email, and message
-    const [name, setName] = React.useState(""); 
-    const [email, setEmail] = React.useState(""); 
-    const [message, setMessage] = React.useState(""); 
+     // State hooks to manage the input fields for name, email, and message
+    const [name, setName] = React.useState('');
+    const [email, setEmail] = React.useState('');
+    const [message, setMessage] = React.useState('');
 
     // JSX structure to render the contact form and embedded map
     return (
@@ -55,7 +55,7 @@ export default function Contact() {
                     name="contact" // Form name for Netlify
                     method="POST"
                     data-netlify="true" // Enable Netlify form handling
-                    netlify-honeypot="bot-field" // Anti-spam hidden field
+                    data-netlify-honeypot="bot-field" // Anti-spam hidden field
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
                 >
                      {/* Hidden input to identify the form */}
