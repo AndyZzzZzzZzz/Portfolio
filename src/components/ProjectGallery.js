@@ -25,19 +25,19 @@ export default function Projects() {
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
           
-          {/* Project 1: Expert.io */}
-          <div className="flex flex-col lg:flex-row items-start">
+           {/* */}
+           <div className="flex flex-col lg:flex-row items-start">
             <CardDemo
-              title="SquadMatch"
-              description="Server-side database website using Ruby on Rails, connecting university students with peers to play sports through secure authentication, real-time availability, and advanced search filters."
-              githubLink="https://github.com/AndyZzzZzzZzz"
-              imageUrl="/black.png"
+              title="Quantum Calibration Refinement"
+              description="Shimming tutorial for quantum calibration refinement in quantum annealing, featuring code to identify symmetries in Ising models and improve quantum annealer performance.."
+              githubLink="https://github.com/AndyZzzZzzZzz/shimming-tutorial"
+              imageUrl="/shim.png"
             />
             {/* Tech Stack display next to the card for larger screens */}
             <div className="hidden lg:flex flex-col justify-start mt-4 lg:mt-0 lg:ml-6">
               <p className="text-lg font-semibold text-gray-900 dark:text-white">Tech Stack:</p>
               <div className="flex flex-col gap-3 mt-2">
-                {["Ruby on Rails", "PostgreSQL", "React.js", "JavaScript", "CSS", "HTML5", "AWS"].map((tech, index) => (
+                {["Python", "Qauntum Computing"].map((tech, index) => (
                   <span 
                     key={index} 
                     className="text-md font-medium text-gray-900 dark:text-gray-100 transform transition duration-300 hover:-translate-y-1 hover:text-indigo-500 dark:hover:text-indigo-400"
@@ -49,7 +49,55 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Project 2: Personal Website */}
+           {/* StormHacks-2024 */}
+           <div className="flex flex-col lg:flex-row items-start">
+            <CardDemo
+              title="LectureSync - StormHacks 2024"
+              description="AI note-taking app with voice-to-text, text-to-speech in multiple languages, and YouTube video-to-text summarization.."
+              githubLink="https://github.com/AndyZzzZzzZzz/StormHacks-2024"
+              imageUrl="/lecture.png"
+            />
+            {/* Tech Stack display next to the card for larger screens */}
+            <div className="hidden lg:flex flex-col justify-start mt-4 lg:mt-0 lg:ml-6">
+              <p className="text-lg font-semibold text-gray-900 dark:text-white">Tech Stack:</p>
+              <div className="flex flex-col gap-3 mt-2">
+                {["Next.js", "JavaScript", "Vercel", "Anthropic API", "Deepgram API", "OpenAI API", "HTML/CSS"].map((tech, index) => (
+                  <span 
+                    key={index} 
+                    className="text-md font-medium text-gray-900 dark:text-gray-100 transform transition duration-300 hover:-translate-y-1 hover:text-indigo-500 dark:hover:text-indigo-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* SquadMatch */}
+          <div className="flex flex-col lg:flex-row items-start">
+            <CardDemo
+              title="SquadMatch"
+              description="Full-stack website using Ruby on Rails, connecting university students with peers to play sports through secure authentication, real-time availability, and advanced search filters."
+              githubLink="https://github.com/AndyZzzZzzZzz/SquadMatch"
+              imageUrl="/SquadMatch.png"
+            />
+            {/* Tech Stack display next to the card for larger screens */}
+            <div className="hidden lg:flex flex-col justify-start mt-4 lg:mt-0 lg:ml-6">
+              <p className="text-lg font-semibold text-gray-900 dark:text-white">Tech Stack:</p>
+              <div className="flex flex-col gap-3 mt-2">
+                {["Ruby on Rails", "PostgreSQL", "Supabase", "HTML/CSS"].map((tech, index) => (
+                  <span 
+                    key={index} 
+                    className="text-md font-medium text-gray-900 dark:text-gray-100 transform transition duration-300 hover:-translate-y-1 hover:text-indigo-500 dark:hover:text-indigo-400"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/*Personal Website */}
           <div className="flex flex-col lg:flex-row items-start">
             <CardDemo
               title="Personal Website"
@@ -73,7 +121,7 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Project 3: Scholar Serpent */}
+          {/*Scholar Serpent */}
           <div className="flex flex-col lg:flex-row items-start">
             <CardDemo
               title="Scholar Serpent"
@@ -97,7 +145,7 @@ export default function Projects() {
             </div>
           </div>
 
-          {/* Project 4: Bank Simulation */}
+          {/* Bank Simulation */}
           <div className="flex flex-col lg:flex-row items-start">
             <CardDemo
               title="Bank Simulation"
